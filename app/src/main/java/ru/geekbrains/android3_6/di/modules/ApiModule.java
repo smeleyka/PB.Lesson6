@@ -33,7 +33,6 @@ public class ApiModule
         return new GsonBuilder().create();
     }
 
-
     @Provides
     public GsonConverterFactory converterFactory(@Named("GsonLCWU") Gson gson)
     {

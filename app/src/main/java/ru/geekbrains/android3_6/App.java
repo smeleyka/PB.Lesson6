@@ -17,7 +17,6 @@ public class App extends com.activeandroid.app.Application
         super.onCreate();
         instance = this;
         Paper.init(this);
-
         Realm.init(this);
 
         appComponent = DaggerAppComponent.builder().build();

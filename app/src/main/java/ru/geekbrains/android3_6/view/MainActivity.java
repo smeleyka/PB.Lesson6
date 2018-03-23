@@ -65,6 +65,8 @@ public class MainActivity extends MvpAppCompatActivity implements MainView
         adapter = new RepoRVAdapter(presenter);
         reposRecyclerView.setAdapter(adapter);
 
+        imageLoader = new ImageLoaderGlide();
+
         checkPermissions();
     }
 
